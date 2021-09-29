@@ -299,7 +299,9 @@ The server uses Crypto.Js package to secure sensitive data, and manages JWT for 
     ```
 
 - **Currently There are 3 Major Data Models:**
+
   List
+
   ```jsx
   {
       title: { type: String, required: true, unique: true },
@@ -309,7 +311,9 @@ The server uses Crypto.Js package to secure sensitive data, and manages JWT for 
     },
     { timestamps: true }
   ```
+
   Movie
+
   ```jsx
   {
       title: { type: String, required: true, unique: true },
@@ -326,7 +330,9 @@ The server uses Crypto.Js package to secure sensitive data, and manages JWT for 
     },
     { timestamps: true }
   ```
+
   User
+
   ```jsx
   {
       username: { type: String, required: true, unique: true },
