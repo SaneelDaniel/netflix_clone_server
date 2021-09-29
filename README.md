@@ -14,6 +14,52 @@ The server uses Crypto.Js package to secure sensitive data, and manages JWT for 
 
 [POSTMAN REQUEST COLLECTION](./netflix_clone.postman_collection.json)
 
+- **Currently There are 3 Major Data Models and Collections:**
+
+  List
+
+  ```jsx
+  {
+      title: { type: String, required: true, unique: true },
+      type: { type: String },
+      genre: { type: String },
+      content:{type: Array}
+    },
+    { timestamps: true }
+  ```
+
+  Movie
+
+  ```jsx
+  {
+      title: { type: String, required: true, unique: true },
+      desc: { type: String },
+      img: { type: String },
+      imgTitle: { type: String },
+      imgSm: { type: String },
+      trailer: { type: String },
+      video: { type: String },
+      year: { type: String },
+      limit: { type: Number },
+      genre: { type: String },
+      isSeries: { type: Boolean, default: false },
+    },
+    { timestamps: true }
+  ```
+
+  User
+
+  ```jsx
+  {
+      username: { type: String, required: true, unique: true },
+      email: { type: String, required: true, unique: true },
+      password: { type: String, required: true },
+      profilePic: { type: String, defaut: "" },
+      isAdmin: { type: Boolean, default: false },
+    },
+    { timestamps: true }
+  ```
+
 - **There are 4 Major REST End Points:**
 
   - Auth
@@ -297,52 +343,6 @@ The server uses Crypto.Js package to secure sensitive data, and manages JWT for 
     		...
     ]
     ```
-
-- **Currently There are 3 Major Data Models:**
-
-  List
-
-  ```jsx
-  {
-      title: { type: String, required: true, unique: true },
-      type: { type: String },
-      genre: { type: String },
-      content:{type: Array}
-    },
-    { timestamps: true }
-  ```
-
-  Movie
-
-  ```jsx
-  {
-      title: { type: String, required: true, unique: true },
-      desc: { type: String },
-      img: { type: String },
-      imgTitle: { type: String },
-      imgSm: { type: String },
-      trailer: { type: String },
-      video: { type: String },
-      year: { type: String },
-      limit: { type: Number },
-      genre: { type: String },
-      isSeries: { type: Boolean, default: false },
-    },
-    { timestamps: true }
-  ```
-
-  User
-
-  ```jsx
-  {
-      username: { type: String, required: true, unique: true },
-      email: { type: String, required: true, unique: true },
-      password: { type: String, required: true },
-      profilePic: { type: String, defaut: "" },
-      isAdmin: { type: Boolean, default: false },
-    },
-    { timestamps: true }
-  ```
 
 ## **Client Application**
 
