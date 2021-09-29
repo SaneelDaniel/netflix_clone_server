@@ -1,0 +1,661 @@
+{
+  "info": {
+    "_postman_id": "9544d311-d2cb-4753-9a3f-50fae9cc234b",
+    "name": "netflix_clone",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Movies",
+      "item": [
+        {
+          "name": "Add Movie",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Shang Chi - The Legend Of the 10 rings\",\n    \"desc\":\"The First Movie starting Marvel's Phase 5\",\n    \"img\": \"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215655imgmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=96a894d3-372b-4ba4-9466-a23bc6a8a457\",\n    \"imgTitle\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"imgSm\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"trailer\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"video\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"year\":\"2021\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/movies",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Movie",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Shang Chi\",\n    \"desc\":\"The First Movie starting Marvel's Phase 5\",\n    \"img\": \"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215655imgmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=96a894d3-372b-4ba4-9466-a23bc6a8a457\",\n    \"imgTitle\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"imgSm\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"trailer\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"video\":\"https://firebasestorage.googleapis.com/v0/b/netflix-adminapp.appspot.com/o/items%2F1632859215675imgSmmb_shangchi-sitewide_20210903_2x.jpeg?alt=media&token=8d6cdda1-55aa-417d-bed6-402c4fb2bc4b\",\n    \"year\":\"2021\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/movies",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Movie 2",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Avengers\",\n    \"desc\":\"Avengers Is One Of The best movie series in the Marvel World\",\n    \"img\": \"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"imgTitle\":\"The Avengers\",\n    \"imgSm\":\"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"trailer\":\"https://www.youtube.com/watch?v=eOrNdBpGMv8\",\n    \"video\":\"https://www.youtube.com/watch?v=g-XPTycrbY8\",\n    \"year\":\"2012\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Movie 3",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Avengers 3\",\n    \"desc\":\"Avengers Is One Of The best movie series in the Marvel World\",\n    \"img\": \"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"imgTitle\":\"The Avengers\",\n    \"imgSm\":\"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"trailer\":\"https://www.youtube.com/watch?v=eOrNdBpGMv8\",\n    \"video\":\"https://www.youtube.com/watch?v=g-XPTycrbY8\",\n    \"year\":\"2012\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Movie 4",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Avengers 4\",\n    \"desc\":\"Avengers Is One Of The best movie series in the Marvel World\",\n    \"img\": \"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"imgTitle\":\"The Avengers\",\n    \"imgSm\":\"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"trailer\":\"https://www.youtube.com/watch?v=eOrNdBpGMv8\",\n    \"video\":\"https://www.youtube.com/watch?v=g-XPTycrbY8\",\n    \"year\":\"2012\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Movie 5",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Avengers 5\",\n    \"desc\":\"Avengers Is One Of The best movie series in the Marvel World\",\n    \"img\": \"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"imgTitle\":\"The Avengers\",\n    \"imgSm\":\"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3EE321A248366260FDADDC2736AEE165B900A7CE74494C0D89E3F097981E34BB/scale?width=1200&aspectRatio=1.78&format=jpeg\",\n    \"trailer\":\"https://www.youtube.com/watch?v=eOrNdBpGMv8\",\n    \"video\":\"https://www.youtube.com/watch?v=g-XPTycrbY8\",\n    \"year\":\"2012\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add  Series",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\":\"Marvel - Loki\",\n    \"desc\":\"Loki is a Series Show developed By MArvel Studios\",\n    \"img\": \"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/ea/Loki_Logo_Cropped.jpg\",\n    \"imgTitle\":\"Loki\",\n    \"imgSm\":\"https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/e/ea/Loki_Logo_Cropped.jpg\",\n    \"trailer\":\"https://www.youtube.com/watch?v=nW948Va-l10\",\n    \"video\":\"https://www.youtube.com/watch?v=nW948Va-l10\",\n    \"year\":\"2021\",\n    \"limit\":16,\n    \"genre\":\"Sci Fi\",\n    \"isSeries\":true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Movies - Admin",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/movies",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "movies"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Users/updateID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MzI1NDUwMjAsImV4cCI6MTYzMjk3NzAyMH0.Mw-ma7bTxbWkCcwKpYJ0yYn3V4WHHtBkZy2VIn5ELm8",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\":\"saneel_daniel\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/users/614ea7fb3ad19c7a221bd39e",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "users", "614ea7fb3ad19c7a221bd39e"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Auth/Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\":\"saneel\",\n    \"email\":\"daniel.saneel@sjsu.edu\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/register",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "register"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Auth/Register2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\":\"stoner\",\n    \"email\":\"stoner@gmail.edu\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/register",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "register"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Auth/Register3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"username\":\"jeenal\",\n    \"email\":\"jeenal@gmail.com\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/register",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "register"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Admin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"daniel.saneel@sjsu.edu\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/login/",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "login", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Jeenal",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"jeenal@gmail.com\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/login",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Stoner",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"stoner@gmail.edu\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/login",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Saneel",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"stoner@gmail.edu\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/auth/login",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete User By ID",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTQxNWQ4MGI5ZDY5MDAxNmMzZjZkOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MzI5MDMxOTMsImV4cCI6MTYzMzMzNTE5M30.35HBkVhd6Hreb_62twRmn_fJANpfjHBc0esgzvoNXa8",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\":\"jeenal@gmail.com\",\n    \"password\":\"dummypassword\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/users/615415d80b9d690016c3f6d8",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "users", "615415d80b9d690016c3f6d8"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User By Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/users/find/614eade77311462f6c50f729",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "users", "find", "614eade77311462f6c50f729"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Users - Admin",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/users/",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "users", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Stats",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/users/stats",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "users", "stats"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Lists",
+      "item": [
+        {
+          "name": "Add List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Latest Movies\",\n    \"type\":\"movies\",\n    \"genre\":\"Sci Fi\",\n    \"content\":[\"6153746289e0d100164af272\",\"6153c6412045a900160a8c41\"]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://netflix-project-server.herokuapp.com/api/lists",
+              "protocol": "https",
+              "host": ["netflix-project-server", "herokuapp", "com"],
+              "path": ["api", "lists"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"Hot Series\",\n    \"type\":\"series\",\n    \"genre\":\"Sci Fi\",\n    \"content\":[\"614ec6d01c5e55c2458f782c\",\"614ec71e1c5e55c2458f782e\",\"614ec7351c5e55c2458f7830\",\"614ec74f1c5e55c2458f7832\"]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:9090/api/lists",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "lists"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGVhN2ZiM2FkMTljN2EyMjFiZDM5ZSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjU1MDYwOCwiZXhwIjoxNjMyOTgyNjA4fQ.aEOg7FX9o8ptLoizQMzvslKSVkw6ETRoj2VY4z9zPwM",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:9090/api/lists?type=series",
+              "host": ["localhost"],
+              "port": "9090",
+              "path": ["api", "lists"],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "series"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

@@ -12,6 +12,8 @@ The Server Side Application is built with Node.Js/Express.Js, utilizes MongoDB f
 
 The server uses Crypto.Js package to secure sensitive data, and manages JWT for Session Management & enhanced Authentication.
 
+[POSTMAN REQUEST COLLECTION](./netflix_clone.postman_collection.json)
+
 - **There are 4 Major REST End Points:**
 
   - Auth
